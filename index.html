@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="km">
+<head>
+<meta charset="utf-8">
+<title>សិរីសួស្តីអាពាហ៍ពិពាហ៍ ចាន់ធារ៉ា និង រ៉ានីនីសា</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Moul&family=Battambang:wght@400;700&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="lock">
+<div id="gate">
+  <div class="scene">
+    <div class="inner"><svg class="ring" viewBox="0 0 70 50" fill="none" stroke="#b88a5a" stroke-width="2"><circle cx="26" cy="28" r="15"/><circle cx="44" cy="28" r="15"/><path d="M26 8l5 6-5 5-5-5z" fill="#b88a5a"/></svg></div>
+    <div class="cover">
+      <svg class="ring" viewBox="0 0 70 50" fill="none" stroke="#b88a5a" stroke-width="2"><circle cx="26" cy="28" r="15"/><circle cx="44" cy="28" r="15"/><path d="M26 8l5 6-5 5-5-5z" fill="#b88a5a"/></svg>
+      <div class="moul t">សិរីសួស្តីអាពាហ៍ពិពាហ៍</div>
+      <div class="amp"><i></i></div>
+      <div class="moul nm">ចាន់ធារ៉ា</div>
+      <div class="amp"><span class="gold" style="font-family:'Moul',serif;font-size:14px">និង</span></div>
+      <div class="moul nm">រ៉ានីនីសា</div>
+    </div>
+  </div>
+  <button class="btn" id="openBtn" type="button">ចុចបើក</button>
+</div>
+
+<main>
+<!-- 1 hero -->
+<div class="card">
+  <p class="moul h1">សិរីសួស្តីអាពាហ៍ពិពាហ៍</p>
+  <div class="rule"></div>
+  <p class="moul names">ចាន់ធារ៉ា</p>
+  <p class="moul gold" style="font-size:18px">និង</p>
+  <p class="moul names">រ៉ានីនីសា</p>
+  <div class="oval"><img src="images/photo1-sunset.jpg" alt=""></div>
+</div>
+
+<!-- 2 invite -->
+<div class="card nv fade">
+  <p class="moul h1">សិរីសួស្តីអាពាហ៍ពិពាហ៍</p>
+  <div class="hosts">
+    <div>លោក ពុធ សុភាព<br>អ្នកនាង ពុធ សុភ័ណ្ឌ</div>
+    <div>លោកស្រី ស្វាយ វិច្ឆរ៉ា</div>
+  </div>
+  <p class="moul big">សូមគោរពអញ្ជើញ</p>
+  <div class="rule"></div>
+  <p class="lead">ឯកឧត្តម លោកជំទាវ លោក លោកស្រី អ្នកនាង កញ្ញា និងប្រិយមិត្ត អញ្ជើញចូលរួមជាអធិបតី និងជាភ្ញៀវកិត្តិយស ក្នុងពិធីអាពាហ៍ពិពាហ៍កូនប្រុស កូនស្រី របស់យើងខ្ញុំ</p>
+</div>
+
+<!-- 3 couple -->
+<div class="card fade">
+  <div class="arch"><img src="images/photo2-studio.jpg" alt=""></div>
+  <div style="height:22px"></div>
+  <p class="cap">កូនប្រុសនាមពុធ</p>
+  <p class="moul names">ចាន់ធារ៉ា</p>
+  <p class="cap" style="margin-top:8px">កូនស្រីនាមឌីណេ</p>
+  <p class="moul names">រ៉ានីនីសា</p>
+</div>
+
+<!-- 4 date & time -->
+<div class="card nv fade">
+  <p class="cap">ដែលនឹងប្រព្រឹត្តទៅនៅ</p>
+  <div class="rule"></div>
+  <p class="moul big">ថ្ងៃសុក្រ ១១ ខែធ្នូ ២០២៦</p>
+  <p class="cap">២កើត ខែមិគសិរ ឆ្នាំមមី អដ្ឋស័ក ព.ស.២៥៧០</p>
+  <p class="moul big gold" style="margin-top:10px">ម៉ោង ៥:៣០ ល្ងាច</p>
+  <div class="cd">
+    <div><b id="d">០</b><span>ថ្ងៃ</span></div>
+    <div><b id="h">០</b><span>ម៉ោង</span></div>
+    <div><b id="m">០</b><span>នាទី</span></div>
+    <div><b id="s">០</b><span>វិនាទី</span></div>
+  </div>
+</div>
+
+<!-- 5 venue -->
+<div class="card fade">
+  <p class="moul h1">ទីកន្លែងរៀបពិធី</p>
+  <div class="rule"></div>
+  <p class="moul big">សាលពិធី [ឈ្មោះទីកន្លែង]</p>
+  <p class="lead">[អាសយដ្ឋាន] រាជធានីភ្នំពេញ ព្រះរាជាណាចក្រកម្ពុជា</p>
+  <a class="lnk" id="mapLink" href="https://www.google.com/maps/search/?api=1&query=Phnom+Penh" target="_blank" rel="noopener">មើលទីតាំងលើ Google Maps</a>
+</div>
+
+<!-- 6 photo -->
+<div class="card nv fade" style="padding:30px 20px">
+  <div class="arch" style="border-radius:4px"><img src="images/photo3-veil.jpg" alt="" style="border-radius:2px"></div>
+</div>
+
+<!-- 7 program -->
+<div class="card fade">
+  <p class="moul h1">កម្មវិធីពិធី</p>
+  <div class="rule"></div>
+  <ul class="prog">
+    <li><b>៥:០០ ល្ងាច</b><span>ទទួលស្វាគមន៍ភ្ញៀវកិត្តិយស</span></li>
+    <li><b>៥:៣០ ល្ងាច</b><span>ពិធីបើកអាពាហ៍ពិពាហ៍ និងពិធីអបអរសាទរ</span></li>
+    <li><b>៦:០០ ល្ងាច</b><span>ពិធីកាត់នំ និងពិធីផ្សេងៗ</span></li>
+    <li><b>៦:៣០ ល្ងាច</b><span>សិរីសួស្តីភោជនាហារ</span></li>
+    <li><b>៨:០០ យប់</b><span>ពិធីបិទ និងថតរូបអនុស្សាវរីយ៍</span></li>
+  </ul>
+</div>
+
+<!-- 8 link + QR -->
+<div class="card nv fade">
+  <p class="moul h1">ចំណងដៃអាពាហ៍ពិពាហ៍</p>
+  <div class="rule"></div>
+  <p class="cap">ស្កេនតាម ABA Mobile ឬកម្មវិធីធនាគារណាមួយដែលគាំទ្រ KHQR</p>
+  <div id="qr"></div>
+  <p class="moul" style="font-size:17px;margin-top:10px">PUTH CHANTHEARA</p>
+  <p class="cap">ABA PAY · KHQR</p>
+  <div class="rule" style="margin-top:30px"></div>
+  <p class="moul big">សូមអរគុណ</p>
+</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
